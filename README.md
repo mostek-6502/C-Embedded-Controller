@@ -2,9 +2,13 @@
 These files represent a small portion (~20%) of 'C' code for a Solar Thermal controller board.  
 
 These files represent communications with:
+
     1. Two     - Dallas Semiconductor DS-2482-800 chips   (multi-channel 1-Wire)
+
     2. Sixteen - Dallas Semiconductor DS18B20 sensors     (temperature sensore 1-Wire)
+    
     3. One     - Linear Technology LTC2309                (multi-channel ADC)
+
 These all utilize the I2C protocol for communications.
 
 The sensor input from these chips feed into downstream systems that run pumps and control
