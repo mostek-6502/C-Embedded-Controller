@@ -3,9 +3,9 @@ These files represent a small portion (~20%) of 'C' code for a Solar Thermal con
 
 These files represent communications with:
 
-    1. Two     - Dallas Semiconductor DS-2482-800 chips   (multi-channel 1-Wire)
+    1. Two     - Dallas Semiconductor DS-2482-800 chips   (multi-channel I/O 1-Wire)
 
-    2. Sixteen - Dallas Semiconductor DS18B20 sensors     (temperature sensore 1-Wire)
+    2. Sixteen - Dallas Semiconductor DS18B20 sensors     (temperature sensor 1-Wire)
     
     3. One     - Linear Technology LTC2309                (multi-channel ADC)
 
