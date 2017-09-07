@@ -11,24 +11,17 @@
 // straight C.  Although the conversion was not desired, the overall support from TI was excellent.
 //
 // This module is the interface to a Linear Technology LTC2309 ADC chip using I2C for a
-//     group of Phot-Resistors.  These photo-resistors, track the sun.
+//     group of Voltage readings.
 //
-// Since I'm using Photoresistors, steady readings are difficult to obtain.
-// Therefore, I sample each channel MAX_ADC_SAMPLES times,
+// Steady readings are difficult to obtain, therefore, I sample each channel MAX_ADC_SAMPLES times,
 //     subtract out the high and the low and divide by MAX_ADC_SAMPLES - 2.
 // Essentially, I'm trying to get a 'decent' steady state for each photo-resistor.
-//
-// Later in the code, the Left and Right sides are compared along with Up and Down and a
-//     'value' is dereived from the comparison's.  This data is then used to determine
-//     if the dish needs to move.
-// Of course, Wind Speed, Fail Safes, Proximity Sensors come into play before any movement begins.
 //
 // The chip is setup for SINGLE ENDED, ODD Sign, UNIPOLAR with an I2C Adderess of 0.
 //
 // Notes:
-// 	    Voltage Channels
-// 	    Chip 2 - Channels - 0 through 3 - Horizontal / R 1K, 4.7K - L 1K, 4.7K  (Right / Left)
-// 	    Chip 2 - Channels - 4 through 7 - Horizontal / U 1K, 4.7K - D 1K, 4.7K  (Up    / Down)
+// 	    Chip 1 - Dish Movement
+// 	    Chip 2 - Motor Speed
 //
 //*****************************************************************************
 
