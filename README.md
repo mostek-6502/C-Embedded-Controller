@@ -1,4 +1,11 @@
 # Controller-C-Code
+
+Rick Faszold
+
+XEn, LLC - USA, Missouri (c)
+
+October 11th, 2017
+
 These files represent a small portion (~20%) of 'C' code for a Solar Thermal controller board.  
 
 These files represent communications with:
